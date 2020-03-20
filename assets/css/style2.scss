@@ -4,7 +4,13 @@ html {
 
 .header {
     width: 100%;
+    position: fixed;
+    margin-top: -130px;
+    z-index: 1;
     /* height: 500px; */
+}
+.header-bawah{
+    width: 100%;
 }
 
 .nav .menu-bar {
@@ -26,14 +32,13 @@ html {
         cursor: pointer;
         font-weight: bold;
         color: whitesmoke;
+    }
+    li:hover {
+        background-color: ivory;
+        color: #e75810;
 
-        :hover {
-            background-color: ivory;
+        a {
             color: #e75810;
-
-            a {
-                color: #e75810;
-            }
         }
     }
 }
