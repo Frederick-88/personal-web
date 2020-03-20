@@ -11,11 +11,10 @@ html {
   width: 100%;
   text-align: center;
   box-shadow: 1px 2px 4px grey;
-  background-color: rgb(83, 82, 82);
+  background-color: #535252;
   padding-inline-start: 0;
 }
-
-.menu-bar li {
+.nav .menu-bar li {
   list-style-type: none;
   display: inline-block;
   padding: 30px;
@@ -28,19 +27,17 @@ html {
   font-weight: bold;
   color: whitesmoke;
 }
+.nav .menu-bar li :hover {
+  background-color: ivory;
+  color: #e75810;
+}
+.nav .menu-bar li :hover a {
+  color: #e75810;
+}
 
 a {
   color: whitesmoke;
   text-decoration: none;
-}
-
-.menu-bar li:hover {
-  background-color: ivory;
-  color: #e75810;
-}
-
-.menu-bar li:hover a {
-  color: #e75810;
 }
 
 .container {
@@ -59,9 +56,7 @@ a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
 }
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
+.card :hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -98,7 +93,7 @@ a {
   font-size: 120px;
   font-weight: bold;
   color: whitesmoke;
-  font-family: 'Pathway Gothic One', sans-serif;
+  font-family: "Pathway Gothic One", sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
@@ -110,3 +105,5 @@ a {
     font-size: 20px;
   }
 }
+
+/*# sourceMappingURL=style2.css.map */
