@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .header {
     width: 100%;
     /* height: 500px; */
@@ -22,10 +25,18 @@
     font-weight: bold;
     color: whitesmoke;
 }
+a{
+  color: whitesmoke;
+  text-decoration: none;
+}
 .menu-bar li:hover{
     background-color: ivory;
     color: #e75810;
 }
+.menu-bar li:hover a {
+  color: #e75810;
+}
+
 .container{
     padding-left: 40px;
     padding-right: 40px;
@@ -59,16 +70,28 @@
   .responsive {
     width: 100%;
     height: auto;
-    opacity: 30%;
+    opacity: 40%;
   }
   .text-insidebox {
     position: relative;
     text-align: center;
-    color: white;
+    background-color: black;
   }
   .centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 120px;
+    font-weight: bold; color: whitesmoke; 
+    font-family: 'Pathway Gothic One', sans-serif;
+  }
+  @media only screen and (max-width: 600px) {
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+    }
   }
